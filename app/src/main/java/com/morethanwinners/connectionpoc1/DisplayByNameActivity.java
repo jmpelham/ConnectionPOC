@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
+import com.morethanwinners.Service.JsonService;
 import com.morethanwinners.business.Business;
 
 import java.util.ArrayList;
@@ -24,6 +25,9 @@ public class DisplayByNameActivity extends AppCompatActivity {
         ArrayList<Business> businessList = new ArrayList<Business>();
         //ArrayList<Business> businessList = intent.getParcelableArrayListExtra("data");
 
+        JsonService jsonService = new JsonService();
+        String jsonData = jsonService.getJsonFromUrl();
+        businessList.add(new Business(jsonData,jsonData,jsonData));
         businessList.add(new Business("McDonalds","555-0000","Food"));
         businessList.add(new Business("Chick Fil A","555-0001","Food"));
         businessList.add(new Business("Red Lobster","555-0002","Food"));

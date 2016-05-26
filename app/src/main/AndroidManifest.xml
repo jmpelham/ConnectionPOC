@@ -27,10 +27,6 @@
             android:label="@string/title_activity_by_name"
             android:parentActivityName=".MainMenuActivity"></activity>
 
-        <service
-            android:name="com.morethanwinners.Service.JsonService"
-            android:enabled="true"
-            android:exported="true"></service>
     </application>
 
 </manifest>
