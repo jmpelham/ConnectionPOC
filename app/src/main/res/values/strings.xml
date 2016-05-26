@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Connection POC</string>
+    <string name="title_activity_by_type">By Type</string>
+    <string name="title_activity_by_name">By Name</string>
+    <string name="title_activity_by_location">By Location</string>
+</resources>
